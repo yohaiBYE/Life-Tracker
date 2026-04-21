@@ -23,7 +23,7 @@ class JobAppsFactory extends Factory
             'company_name' => fake()->company(),
             'role' => fake()->jobTitle(),
             'status' => fake()->randomElement(['applied', 'interviewing', 'offered', 'rejected', 'accepted']),
-            'applied_at' => fake()->dateThisYear(),
+            'applied_at' => fake()->date(),
             'note' => fake()->sentence(),
         ];
     }

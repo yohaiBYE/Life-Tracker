@@ -24,7 +24,7 @@ class TransactionFactory extends Factory
             'type' => fake()->randomElement(['income', 'expense']),
             'category' => fake()->randomElement(['Food', 'Rent', 'Salary', 'Entertainment', 'Utilities']),
             'note' => fake()->sentence(),
-            'transaction_date' => fake()->dateThisYear(),
+            'transaction_date' => fake()->date(),
         ];
     }
 }

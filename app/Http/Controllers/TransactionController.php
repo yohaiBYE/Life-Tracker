@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Budget;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 
-class BudgetController extends Controller
+class TransactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class BudgetController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Budget $budget)
+    public function show(Transaction $transaction)
     {
         //
     }
@@ -42,7 +42,7 @@ class BudgetController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Budget $budget)
+    public function edit(Transaction $transaction)
     {
         //
     }
@@ -50,7 +50,7 @@ class BudgetController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Budget $budget)
+    public function update(Request $request, Transaction $transaction)
     {
         //
     }
@@ -58,7 +58,7 @@ class BudgetController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Budget $budget)
+    public function destroy(Transaction $transaction)
     {
         //
     }
