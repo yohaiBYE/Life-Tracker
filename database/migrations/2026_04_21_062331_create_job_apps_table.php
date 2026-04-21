@@ -19,7 +19,7 @@ return new class extends Migration
             $table->enum('status', ['applied', 'interviewing', 'offered', 'rejected', 'accepted'])
                 ->default('applied');
             $table->date('applied_at');
-            $table->string('notes')->nullable();
+            $table->string('note')->nullable();
             $table->timestamps();
         });
     }
