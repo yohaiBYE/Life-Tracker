@@ -33,7 +33,7 @@ class HomeworkTaskController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreHomeworkTaskRequest $request)
     {
         auth()->user()->homeworkTasks()->create(
             $request->validated()
@@ -67,7 +67,7 @@ class HomeworkTaskController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, HomeworkTask $homeworkTask)
+    public function update(UpdateHomeworkTaskRequest $request, HomeworkTask $homeworkTask)
     {
         $this->authorize('update', $homeworkTask);
 
